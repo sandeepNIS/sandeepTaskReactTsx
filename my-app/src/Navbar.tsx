@@ -1,0 +1,21 @@
+// import Register from "./Pages/Register"
+// import List from "./Pages/List"
+
+import Home from "./Pages/Home"
+import List from "./Pages/List"
+ function Navbar(){
+    return <nav className="nav">
+        
+        <a href="/" onClick={Home} className="site-title">MyApp</a>
+        <ul >
+            <li className="active">
+            <a href="/register" >Register</a> 
+                </li>
+                <li className="active">
+                <a href="/list"onClick={List}>List</a> 
+            </li>
+        </ul>
+    </nav>
+    
+}
+export default Navbar

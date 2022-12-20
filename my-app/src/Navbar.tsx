@@ -1,4 +1,4 @@
-// import Register from "./Pages/Register"
+import Register from "./Pages/Register"
 // import List from "./Pages/List"
 
 import Home from "./Pages/Home"
@@ -9,7 +9,7 @@ import List from "./Pages/List"
         <a href="/" onClick={Home} className="site-title">MyApp</a>
         <ul >
             <li className="active">
-            <a href="/register" >Register</a> 
+            <a href="/register" onClick={Register} >Register</a> 
                 </li>
                 <li className="active">
                 <a href="/list"onClick={List}>List</a> 

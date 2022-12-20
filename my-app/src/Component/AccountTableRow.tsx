@@ -14,11 +14,6 @@ const [name, setName] = useState(props.obj.username);
 const [email, setEmail] = useState(props.obj.email);
 const [id, setId] = useState(props.obj.id);
 
-let userData = (data: { name: any; email: any; id: any; }) => {
-    setName(data.name);
-    setEmail(data.email);
-	setId(data.id);
-  };
 
 const [user, setUser] = useState({
     name: props.obj.username,

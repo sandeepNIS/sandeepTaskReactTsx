@@ -5,6 +5,7 @@ import Home from "./Pages/Home"
 // import List from "./Pages/List"
 import { Route, Routes } from "react-router-dom"
 import List from "./Pages/List"
+import Register from "./Pages/Register"
 
 
 export default function App() {
@@ -14,8 +15,8 @@ export default function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/Register" element={<List/>}/>
-          <Route path="/List"  />
+          <Route path="/Register" element={<Register/>}/>
+          <Route path="/List" element={<List/>}  />
         </Routes>
       </div>
     </div>

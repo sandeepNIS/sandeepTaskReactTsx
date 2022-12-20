@@ -10,7 +10,7 @@ const Register = () => {
 const [formValues, setFormValues] =
 	useState({ username:'', email: '', password: '' })
 // onSubmit handler
-const onSubmit = (studentObject: any) => {
+const onSubmit = studentObject => {
 	axios.post(
 'http://localhost:3080/account/addaccount',
 	studentObject)
@@ -42,7 +42,7 @@ const onSubmit = (studentObject: any) => {
 
 // Return student form
 return(
-	<AccountForm formvalues={formValues}
+	<AccountForm initialValues={ formValues}
 	onSubmit={onSubmit}
 	enableReinitialize>
 	Create Account

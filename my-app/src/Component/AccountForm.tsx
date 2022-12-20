@@ -1,6 +1,6 @@
 import React from "react";
 import * as Yup from "yup";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FormikHelpers, FormikValues } from "formik";
 import { FormGroup, FormLabel, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -14,7 +14,9 @@ const validationSchema = Yup.object().shape({
 console.log(props);
 return (
 	<div className="form-wrapper">
-	<Formik {...props} validationSchema={validationSchema}>
+	<Formik initialValues={undefined} onSubmit={function (values: FormikValues, formikHelpers: FormikHelpers<FormikValues>): void | Promise<any> {
+			throw new Error("Function not implemented.");
+		} } {...props} validationSchema={validationSchema}>
         <center>
            
 		<Form>
